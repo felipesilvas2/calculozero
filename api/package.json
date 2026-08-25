@@ -1,0 +1,10 @@
+{
+  "name": "calculozero-tutor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Proxy do tutor do Cálculo Zero: guarda a chave da API e devolve a resposta em streaming.",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0"
+  }
+}
