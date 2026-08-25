@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Cálculo Zero — matemática sem medo, do zero até o cálculo.">
+  <meta name="theme-color" content="#F6F7FA">
+  <title>Cálculo Zero — Matemática sem medo</title>
+
+  <link rel="stylesheet" href="src/styles/base.css">
+  <link rel="stylesheet" href="src/styles/ui.css">
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- Scripts clássicos e não módulos ES: a plataforma precisa abrir
+       direto do disco (file://), sem servidor. A ordem abaixo é a ordem
+       de dependência. -->
+
+  <!-- núcleo -->
+  <script src="src/core/dom.js"></script>
+  <script src="src/core/storage.js"></script>
+  <script src="src/core/syllabus.js"></script>
+
+  <!-- dados: trilhas -->
+  <script src="src/data/curriculum.js"></script>
+  <script src="src/data/diagnostic.js"></script>
+  <script src="src/data/lessons.js"></script>
+  <script src="src/data/exercises.js"></script>
+
+  <!-- dados: trilhas extras, que se registram no banco base -->
+  <script src="src/data/lessons-vectors.js"></script>
+  <script src="src/data/exercises-vectors.js"></script>
+
+  <!-- dados: base curricular (estrutura) -->
+  <script src="src/data/syllabus/01-matematica-basica.js"></script>
+  <script src="src/data/syllabus/02-algebra.js"></script>
+  <script src="src/data/syllabus/03-geometria.js"></script>
+  <script src="src/data/syllabus/04-funcoes.js"></script>
+  <script src="src/data/syllabus/05-trigonometria.js"></script>
+  <script src="src/data/syllabus/06-precalculo.js"></script>
+  <script src="src/data/syllabus/07-calculo1.js"></script>
+  <script src="src/data/syllabus/08-probabilidade.js"></script>
+  <script src="src/data/syllabus/09-estatistica.js"></script>
+  <script src="src/data/syllabus/10-computacao.js"></script>
+  <script src="src/data/syllabus/11-ciencia-dados.js"></script>
+  <script src="src/data/syllabus/12-algebra-linear.js"></script>
+
+  <!-- dados: fichas de tópico (conteúdo profundo).
+       O registro publica os exercícios das fichas no banco geral, então
+       precisa vir depois de exercises.js. -->
+  <script src="src/core/sheets.js"></script>
+  <script src="src/data/sheets/01-matematica-basica.js"></script>
+  <script src="src/data/sheets/02-algebra.js"></script>
+  <script src="src/data/sheets/03-geometria.js"></script>
+  <script src="src/data/sheets/04-funcoes.js"></script>
+  <script src="src/data/sheets/05-trigonometria.js"></script>
+  <script src="src/data/sheets/06-precalculo.js"></script>
+  <script src="src/data/sheets/07-calculo1.js"></script>
+  <script src="src/data/sheets/08-probabilidade.js"></script>
+  <script src="src/data/sheets/09-estatistica.js"></script>
+  <script src="src/data/sheets/12-algebra-linear.js"></script>
+
+  <!-- dados: simulados -->
+  <script src="src/data/exams.js"></script>
+
+  <!-- lógica -->
+  <script src="src/core/store.js"></script>
+  <script src="src/core/engine.js"></script>
+  <script src="src/core/viz.js"></script>
+  <script src="src/core/mascote.js"></script>
+  <script src="src/core/explain.js"></script>
+  <script src="src/core/profile.js"></script>
+  <script src="src/core/labs.js"></script>
+  <script src="src/core/exams.js"></script>
+  <script src="src/core/router.js"></script>
+  <script src="src/core/ai.js"></script>
+
+  <!-- componentes -->
+  <script src="src/components/ui.js"></script>
+  <script src="src/components/celebrate.js"></script>
+  <script src="src/components/explainer.js"></script>
+  <script src="src/components/tutor.js"></script>
+
+  <!-- páginas -->
+  <script src="src/pages/landing.js"></script>
+  <script src="src/pages/diagnostic.js"></script>
+  <script src="src/pages/dashboard.js"></script>
+  <script src="src/pages/map.js"></script>
+  <script src="src/pages/lesson.js"></script>
+  <script src="src/pages/practice.js"></script>
+  <script src="src/pages/catalog.js"></script>
+  <script src="src/pages/topic.js"></script>
+  <script src="src/pages/lab.js"></script>
+  <script src="src/pages/exam.js"></script>
+  <script src="src/pages/perfil.js"></script>
+
+  <!-- bootstrap -->
+  <script src="src/app.js"></script>
+</body>
+</html>
